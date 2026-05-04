@@ -1,0 +1,179 @@
+echo hola
+echo "Hoy es lunes"
+echo $HOME
+pwd
+ls
+ls -l
+mkdir clase4
+ls -l
+cd clase4/
+pwd
+history
+cat > archivo1.txt
+ls -l
+cat archivo1.txt 
+cat > archivo2.txt
+ls -l
+cat archivo1.txt archivo2.txt > archivo3.txt
+ls -l
+cat archivo3.txt 
+grep Linea4 archivo3.txt 
+cd ..
+pwd
+ssh-keygen -t ed25519
+ls -la
+cd .ssh
+ls -l
+cat id_ed25519.pub 
+cd ..
+pwd
+ls -l
+cd repogit
+pwd
+ls -l
+git clone git@github.com:UmaMedeiros/VMvagrant_repo.git
+ls -l
+cd VMvagrant_repo/
+ls -l
+echo "Mi primer repo"
+echo "Mi primer repo" > texto1.txt
+ls -l
+cat texto1.txt 
+git status
+git add .
+git status
+git commit -m "agrego texto1.txt"
+git config --global user.name "UmaMedeiros"
+git commit -m "agrego texto1.txt"
+git status
+ls -l
+git push
+cd home
+pwd
+cd ..
+pwd
+vagrant halt
+pwd
+cd clase4/
+ls -l
+tree
+sudo apt update
+sudo apt install tree
+tree
+ls -l
+cd ..
+pwd
+tree
+ls -l
+mkdir clase5
+ls -l
+cd clase5
+pwd
+ls -l
+mkdir practica
+ls -l
+cd practica/
+ls -l
+touch practica1.txt
+ls -l
+cat practica1.txt 
+cp practica1.txt practica2.txt
+ls -l
+rm practica1.txt
+ls -l
+mv practica2.txt /home/vagrant/clase5
+ls -l
+cd clase5
+cd ..
+pwd
+ls -l
+rmdir practica/
+ls -l
+pwd
+mkdir facturas pedidos
+tree
+mkdir -p clientes/{facturas,pedidos}
+tree
+mkdir -p {clintes,proveedores}/{facturas,pedidos}
+tree
+mkdir -p contactos/{clintes,proveedores}/{facturas,pedidos}
+tree
+mkdir -p medeiros_1/contactos/{clintes,proveedores}/{facturas,pedidos}
+tree
+pwd
+grep vagrant /etc/passwd
+cat /etc/passwd
+cat /etc/shadow
+sudo cat /etc/shadow
+sudo grep vagrant /etc/shadow
+grep vagrant /etc/group
+sudo su
+cd ..
+pwd
+sudo groupadd Alumnos
+cat /etc/group
+sudo useradd -m -s /bin/bash -c "Alumno Pepe" -G Alumnos Pepe
+cat /etc/passwd
+cat /etc/group
+ls -l /home
+sudo passwd Pepe
+pwd
+su - Pepe
+pwd
+whoami
+vagrant halt
+ssh-keygen -t ed25519
+cat $HOME/.ssh/*.pub
+cd repogit
+git clone git@github.com:UmaMedeiros/TP_AySO.git
+ls -l
+pwd
+cd TP_AySO/
+pwd
+ls -l
+cat /etc/os-release
+grep HOME_URL /etc/os-release
+grep home_url /etc/os-release
+man grep
+grep -i home_url /etc/os-release
+grep -i home_url /etc/os-release > datos_url.txt
+cat datos_url.txt
+whoami 
+echo “Usuario=$(whoami)” > datos_usuario.txt
+cat datos_usuario.txt
+echo "Usuario=$(whoami)" > datos_usuario.txt
+cat datos_usuario.txt
+git status
+git add .
+git config --global user.email "medeirosuma321@gmail.com"
+git config --global user.name "UmaMedeiros"
+git commit -m "ADD: agregado 1er ejercicio sobre datos_usuarios.txt"
+git push
+grep "model name" /proc/cpuinfo | head -n1 >> datos_usuario.txt
+cat datos_usuario.txt
+git add .
+git commit -m "feat:  AMD Ryzen 5 3400G with Radeon Vega Graphics"
+git push
+cat <<EOF >> README.md
+Alumno: Uma Medeiros
+División: 113
+Turno: Mañana
+EOF
+
+cat README.md
+git add README.md datos_usuarios.txt
+git add README.md datos_usuario.txt
+git commit -m "ADD: Añadiendo Readme y datos de usuario"
+git push
+mkdir -p material1/{uni1,uni2,uni3} material2/{uni1,uni2,uni3}
+tree
+git add .
+git commit -m "ADD: estructura de directorios"
+git push
+touch script_dir.sh
+echo 'mkdir -p material1/{uni1,uni2,uni3} material2/{uni1,uni2,uni3}' > script_dir.sh
+cat script_dir.sh
+git add .
+git commit -m "ADD: Historial de comandos de Medeiros"
+git push
+history -a 
