@@ -1,1 +1,3 @@
 Usuario=vagrant
+model name	: AMD Ryzen 5 3400G with Radeon Vega Graphics
+model name	: AMD Ryzen 5 3400G with Radeon Vega Graphics
